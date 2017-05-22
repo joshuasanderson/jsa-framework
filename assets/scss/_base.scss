@@ -1,0 +1,77 @@
+// Base
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Kreon', sans-serif;
+    color: $primary-font-color;
+    background-color: $background-color;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0;
+}
+
+// This page wrapper contains the header and all page content.
+// On screens > 1200px, there will be a light grey background-color shown from the body tag.
+#page-wrapper {
+    max-width: 1200px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    // TODO: Add a nice shaddow to the left and right
+}
+
+// The .container class lives inside the #page-wrapper. All content will live here.
+.container {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &.is-condensed {
+        margin: 20px auto 20px;
+        max-width: 92%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        margin: 0 auto;
+        max-width: 960px;
+        width: 960px;
+
+        &.is-fluid {
+            margin: 0 20px;
+            max-width: none;
+            width: auto;
+        }
+
+        &.is-condensed {
+            margin: 65px auto 65px;
+            max-width: 675px;
+        }
+    }
+}
+
+@media screen and (min-width: 1192px) {
+    .container {
+        max-width: 1152px;
+        width: 1152px;
+    }
+}
+
+// @media screen and (min-width: 1384px) {
+//     .container {
+//         max-width: 1344px;
+//         width: 1344px;
+//     }
+// }
