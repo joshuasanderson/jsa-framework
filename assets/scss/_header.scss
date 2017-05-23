@@ -5,5 +5,27 @@ header {
     background: #FFF;
     padding-top: 30px;
     padding-bottom: 40px;
+    margin-bottom: 50px;
     // TODO: Make the header fixed? Or Make a
+
+    .nav-left {
+        float: left;
+    }
+
+    .nav-right {
+        float: right;
+
+        nav {
+            display: block;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
 }

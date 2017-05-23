@@ -8,8 +8,8 @@ html {
   font-size: 18px; }
 
 body {
-  background-color: #0B132B;
-  font-family: 'Kreon', sans-serif;
+  background-color: #eee;
+  font-family: 'Lora', sans-serif;
   color: #000000;
   font-size: 1em;
   font-weight: 300;
@@ -23,21 +23,22 @@ body {
 
 .container {
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px; }
+  padding-right: 7%;
+  padding-left: 7%;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto; }
   .container.is-condensed {
     margin: 20px auto 20px;
     max-width: 92%; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1281px) {
   .page-wrapper {
     max-width: 1500px;
     width: 90%; }
 
   .container {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 85%; }
+    max-width: 1600px; }
     .container.is-fluid {
       margin: 0 20px;
       max-width: none;
@@ -48,7 +49,19 @@ body {
 header {
   background: #FFF;
   padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  margin-bottom: 50px; }
+  header .nav-left {
+    float: left; }
+  header .nav-right {
+    float: right; }
+    header .nav-right nav {
+      display: block; }
+      header .nav-right nav ul {
+        list-style: none; }
+        header .nav-right nav ul li {
+          display: inline-block;
+          margin-right: 2em; }
 
 b,
 strong {
@@ -62,6 +75,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: 'Nunito', serif;
   font-weight: 300;
   letter-spacing: normal;
   margin-top: 0;

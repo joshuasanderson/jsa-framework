@@ -12,8 +12,8 @@ html {
 }
 
 body {
-    background-color: $background-color-blue;
-    font-family: 'Kreon', sans-serif;
+    background-color: $background-color;
+    font-family: 'Lora', sans-serif;
     color: $primary-font-color;
     font-size: 1em;
     font-weight: 300;
@@ -32,8 +32,11 @@ body {
 // The .container class lives inside the #page-wrapper. All content will live here.
 .container {
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-right: 7%;
+    padding-left: 7%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 
     &.is-condensed {
         margin: 20px auto 20px;
@@ -41,16 +44,14 @@ body {
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1281px) {
     .page-wrapper {
         max-width: 1500px;
         width: 90%
     }
 
     .container {
-        margin: 0 auto;
-        max-width: 100%;
-        width: 85%;
+        max-width: 1600px;
 
         &.is-fluid {
             margin: 0 20px;
