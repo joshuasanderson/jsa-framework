@@ -2,30 +2,38 @@
 
 <head>
     <title>JSA - Website Framework</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora|Nunito:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Lora|Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/framework.css" />
 </head>
 
 <body>
     <div class="page-wrapper">
-        <div class="container">
-            <header>
-                <div class="nav-left">
-                    <h5>JSA - Website Framework</h5>
+        <header>
+            <div class="nav-left">
+                <h5 class="title">JSA - Website Framework</h5>
+            </div>
+            <div class="nav-right">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/photos.html">Photos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
                 </div>
-                <div class="nav-right">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="/about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="/photos.html">Photos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            </div>
+        </header>
+
+        <div class="container is-fluid has-no-padding">
+            <img src="http://media.gq.com/photos/59024507eb1feb7c1b66dc35/16:9/w_1600/Brad-Pitt-GQ-Style-14.jpg" title="hero" />
         </div>
 
         <div class="container">
@@ -35,6 +43,21 @@
                 survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
+        </div>
+
+        <div class="container">
+            <h4>This is the grid system</h4>
+            <div class="row">
+                <div class="column">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="column">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="column">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
         </div>
 
         <div class="container is-condensed">
@@ -54,6 +77,17 @@
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
+
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 
