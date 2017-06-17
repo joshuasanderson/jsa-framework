@@ -4,35 +4,27 @@
     <title>JSA - Website Framework</title>
     <link href="https://fonts.googleapis.com/css?family=Karla|Lora|Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/framework.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="page-wrapper">
-        <header>
-            <div class="nav-left">
-                <h5 class="title">JSA - Website Framework</h5>
-            </div>
-            <div class="nav-right">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="/photos.html">Photos</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="button_container" id="toggle">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
+        <header class="container is-fluid">
+            <div class="header-content">
+                <div class="title">
+                    <h3>JSA - Website Framework</h3>
+                </div>
+                <div class="nav-right mobile">
+                    <button class="header-menu js-menu">
+                        <span class="header-menu-line"></span>
+                        <span class="header-menu-line"></span>
+                    </button>
                 </div>
             </div>
         </header>
 
-        <div class="container is-fluid has-no-padding">
+        <div class="container is-fluid is-hero">
             <img src="http://media.gq.com/photos/59024507eb1feb7c1b66dc35/16:9/w_1600/Brad-Pitt-GQ-Style-14.jpg" title="hero" />
         </div>
 
@@ -89,6 +81,15 @@
             </ul>
         </nav>
     </div>
+
+    <script>
+        $(function() {
+            $('.js-menu').click(function() {
+                $(this).toggleClass('active');
+                $('#overlay').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>

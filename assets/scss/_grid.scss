@@ -55,6 +55,8 @@
         margin-left: 0;
         max-width: 100%;
         width: 100%;
+        margin-bottom: 2em;
+
         // Column Offsets
         &.column-offset-10 {
             margin-left: 10%;
@@ -168,7 +170,7 @@
     }
 }
 // Larger than mobile screen
-@media (min-width: 40rem) {
+@media (min-width: 400px) {
     .row {
         flex-direction: row;
         margin-left: -1rem;
