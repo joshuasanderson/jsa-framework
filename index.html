@@ -2,7 +2,7 @@
 
 <head>
     <title>JSA - Website Framework</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla|Lora|Nunito:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Lora|Nunito|EB+Garamond:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/framework.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -13,7 +13,17 @@
         <header class="container is-fluid">
             <div class="header-content">
                 <div class="title">
-                    <h3>JSA - Website Framework</h3>
+                    <a href="#" class="title-link">Joshua Anderson</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Photosets</a>
+                        </li>
+                        <li>
+                            <a href="#">Prints</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="nav-right mobile">
                     <button class="header-menu js-menu">
@@ -24,7 +34,7 @@
             </div>
         </header>
 
-        <div class="container is-fluid is-hero">
+        <div class="container is-full is-hero">
             <img src="http://media.gq.com/photos/59024507eb1feb7c1b66dc35/16:9/w_1600/Brad-Pitt-GQ-Style-14.jpg" title="hero" />
         </div>
 
@@ -86,6 +96,7 @@
         $(function() {
             $('.js-menu').click(function() {
                 $(this).toggleClass('active');
+                $('header .title').toggleClass('active');
                 $('#overlay').toggleClass('open');
             });
         });

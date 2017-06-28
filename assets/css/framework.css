@@ -81,9 +81,9 @@ html {
 
 body {
   background-color: #eee;
-  font-family: 'Lora', sans-serif;
+  font-family: 'EB Garamond', sans-serif;
   color: #484747;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 300;
   margin: 0; }
 
@@ -127,6 +127,10 @@ body {
       .container.is-fluid.has-no-padding {
         padding: 0;
         margin: 0; }
+    .container.is-full {
+      margin: 0;
+      padding: 0;
+      width: 100%; }
     .container.is-condensed {
       margin: 65px auto 65px;
       max-width: 675px; } }
@@ -134,7 +138,9 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-top: 1% !important;
+  padding-bottom: 1% !important; }
   header .header-content {
     text-align: center; }
     header .header-content:before {
@@ -147,13 +153,38 @@ header {
     header .header-content .title {
       display: inline-block;
       position: relative;
-      z-index: 2; }
-      header .header-content .title h3 {
+      z-index: 2;
+      text-transform: uppercase; }
+      header .header-content .title .title-link {
         font-size: 20px;
-        margin: 0; }
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        color: #8898aa;
+        text-decoration: none; }
+        header .header-content .title .title-link:hover {
+          color: #484747; }
+      header .header-content .title.active {
+        display: none; }
+    header .header-content .menu {
+      text-align: right; }
+      header .header-content .menu ul li {
+        display: inline-block;
+        margin: 0 15px; }
+        header .header-content .menu ul li:last-child {
+          margin-right: 0; }
+        header .header-content .menu ul li a {
+          font-family: 'Nunito', sans-serif;
+          font-weight: 700;
+          text-transform: lowercase;
+          text-decoration: none;
+          color: #484747; }
+          header .header-content .menu ul li a:hover {
+            color: #8898aa; }
     header .header-content .nav-left {
       float: left; }
     header .header-content .nav-right {
+      display: none;
       float: right; }
       header .header-content .nav-right .header-menu {
         display: inline-block;
@@ -168,49 +199,16 @@ header {
         header .header-content .nav-right .header-menu .header-menu-line {
           height: 2px;
           width: 100%;
-          background-color: #1a1a1a;
+          background-color: #484747;
           display: block;
           transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
           header .header-content .nav-right .header-menu .header-menu-line:last-of-type {
             margin-top: 6px; }
         header .header-content .nav-right .header-menu.active .header-menu-line {
-          transform: translateY(3px) rotate(45deg); }
+          transform: translateY(3px) rotate(45deg);
+          background: #fff; }
           header .header-content .nav-right .header-menu.active .header-menu-line:last-of-type {
             transform: translateY(-5px) rotate(-45deg); }
-      header .header-content .nav-right .button_container {
-        position: fixed;
-        top: 5%;
-        right: 2%;
-        height: 27px;
-        width: 35px;
-        cursor: pointer;
-        z-index: 100;
-        transition: opacity 0.25s ease; }
-        header .header-content .nav-right .button_container:hover {
-          opacity: 0.7; }
-        header .header-content .nav-right .button_container.active .top {
-          transform: translateY(11px) translateX(0) rotate(45deg);
-          background: #fff; }
-        header .header-content .nav-right .button_container.active .middle {
-          opacity: 0;
-          background: #fff; }
-        header .header-content .nav-right .button_container.active .bottom {
-          transform: translateY(-11px) translateX(0) rotate(-45deg);
-          background: #fff; }
-        header .header-content .nav-right .button_container span {
-          background: #FF5252;
-          border: none;
-          height: 5px;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          transition: all 0.35s ease;
-          cursor: pointer; }
-          header .header-content .nav-right .button_container span:nth-of-type(2) {
-            top: 11px; }
-          header .header-content .nav-right .button_container span:nth-of-type(3) {
-            top: 22px; }
       header .header-content .nav-right nav {
         display: block; }
         header .header-content .nav-right nav ul {
